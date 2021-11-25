@@ -174,22 +174,27 @@
                 align-items-lg-center
                 flex-row
                 justify-content-around
+                footer-links
               "
             >
-              <li class="nav-item dropdown">
-                <a href="#" class="nav-link">
-                  <span class="nav-link-inner-text">About</span>
+              <li class="nav-item dropdown mx-2">
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/file/d/10PSHyRypQsYhrieNR4FhOkQEAZMaehAr/view?usp=sharing"
+                  class="nav-link p-2"
+                >
+                  <span class="nav-link-inner-text ml-0">Resume</span>
                 </a>
               </li>
 
-              <li class="nav-item dropdown">
-                <a href="#" class="nav-link">
-                  <span class="nav-link-inner-text">Projects</span>
+              <li class="nav-item dropdown mx-2">
+                <a href="#projects" class="nav-link p-2">
+                  <span class="nav-link-inner-text ml-0">Projects</span>
                 </a>
               </li>
-              <li class="nav-item dropdown">
-                <a href="#contact" class="nav-link">
-                  <span class="nav-link-inner-text">Contact</span>
+              <li class="nav-item dropdown mx-2">
+                <a href="#contact" class="nav-link p-2">
+                  <span class="nav-link-inner-text ml-0">Contact</span>
                 </a>
               </li>
             </ul>
@@ -212,80 +217,173 @@
     </header>
     <!-- !Main -->
     <main>
-      <section class="section section-lg head-section">
+      <section class="section section-xl head-section">
         <div class="container">
-          <div class="row align-items-start justify-content-around">
-            <div class="col-md-6 col-xl-6 mt-6">
-              <div class="profile-card">
-                <div
-                  class="card bg-primary shadow-inset border-light text-center"
-                >
-                  <div class="card-header">
-                    <div
-                      class="
-                        profile-image
-                        bg-primary
-                        shadow-inset
-                        border border-light
-                        rounded
-                        mx-auto
-                        p-3
-                        mt-n6
-                      "
-                    >
-                      <img
-                        src="../../assets/img/p-pic.png"
-                        class="card-img-top rounded"
-                        alt="Leos Portrait"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-body pb-5">
-                    <h3 class="mb-2">Hi! I'm Marcos Cardoso</h3>
-                    <span class="h6 font-weight-normal text-gray mb-3"
-                      >A Fullstack Software Engineer</span
-                    >
-                    <ul
-                      class="
-                        list-unstyled
-                        d-flex
-                        justify-content-center
-                        mt-3
-                        mb-4
-                      "
-                    >
-                      <li>
-                        <a
-                          href="https://twitter.com/_MagicMarcos"
-                          target="_blank"
-                          aria-label="twitter social link"
-                          class="icon icon-xs icon-twitter mr-3"
-                        >
-                          <span class="fab fa-twitter-square"></span>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://github.com/MagicMarcos"
-                          target="_blank"
-                          aria-label="dribbble social link"
-                          class="icon icon-xs icon-dribbble mr-3"
-                        >
-                          <span class="fab fa-github-square"></span>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.linkedin.com/in/marcoscardoso-dev/"
-                          target="_blank"
-                          aria-label="facebook social link"
-                          class="icon icon-xs icon-facebook mr-3"
-                        >
-                          <span class="fab fa-linkedin"></span>
-                        </a>
-                      </li>
+          <div class="row">
+            <div class="col">
+              <div class="card bg-primary shadow-soft border-light px-3">
+                <div class="row align-items-start justify-content-around">
+                  <div class="col-md-6 col-xl-6 mt-6">
+                    <div class="profile-card">
+                      <div
+                        class="
+                          card
+                          bg-primary
+                          shadow-inset
+                          border-light
+                          text-center
+                        "
+                      >
+                        <div class="card-header">
+                          <div
+                            class="
+                              profile-image
+                              bg-primary
+                              shadow-inset
+                              border border-light
+                              rounded
+                              mx-auto
+                              p-3
+                              mt-n6
+                            "
+                          >
+                            <img
+                              src="../../assets/img/p-pic.png"
+                              class="card-img-top rounded"
+                              alt="Marcos Photo"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-body pb-5">
+                          <h3 class="mb-2">Hi! I'm Marcos Cardoso</h3>
+                          <span class="h6 font-weight-normal text-gray mb-3"
+                            >A Fullstack Software Engineer in Boston</span
+                          >
 
-                      <!-- <li>
+                          <ul
+                            class="
+                              list-unstyled
+                              d-flex
+                              justify-content-center
+                              mt-5
+                              mb-3
+                            "
+                          >
+                            <li class="mr-3">
+                              <a
+                                href="https://twitter.com/_MagicMarcos"
+                                target="_blank"
+                                class="btn btn-icon-only btn-pill btn-primary"
+                                aria-label="twitter social link"
+                                data-toggle="tooltip"
+                                data-placement="bottom"
+                                title="Follow me @_MagicMarcos on Twitter"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  class="fab fa-twitter"
+                                ></span>
+                              </a>
+                            </li>
+
+                            <li class="mr-3">
+                              <a
+                                href="https://github.com/MagicMarcos"
+                                target="_blank"
+                                class="btn btn-icon-only btn-pill btn-primary"
+                                aria-label="github social link"
+                                data-toggle="tooltip"
+                                data-placement="bottom"
+                                title="Check out my other projects on Github"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  class="fab fa-github"
+                                ></span>
+                              </a>
+                            </li>
+                            <li class="mr-3">
+                              <a
+                                href="https://www.linkedin.com/in/marcoscardoso-dev/"
+                                target="_blank"
+                                class="btn btn-icon-only btn-pill btn-primary"
+                                aria-label="linkedin social link"
+                                data-toggle="tooltip"
+                                data-placement="bottom"
+                                title="Connect with me on LinkedIn"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  class="fab fa-linkedin-in"
+                                ></span>
+                              </a>
+                            </li>
+                            <li class="mr-3">
+                              <a
+                                href="#contact"
+                                class="btn btn-icon-only btn-pill btn-primary"
+                                aria-label="contact link"
+                                data-toggle="tooltip"
+                                data-placement="bottom"
+                                title="Contact me"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  class="fas fa-comment"
+                                ></span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                target="_blank"
+                                href="https://drive.google.com/file/d/10PSHyRypQsYhrieNR4FhOkQEAZMaehAr/view?usp=sharing"
+                                download="Marcos_Cardoso_Resume"
+                                class="btn btn-icon-only btn-pill btn-primary"
+                                aria-label="portfolio link"
+                                data-toggle="tooltip"
+                                data-placement="bottom"
+                                title="See My Resume on Google Drive. You may also download it directly at the bottom of this page."
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  class="fas fa-cloud-download-alt"
+                                ></span>
+                              </a>
+                            </li>
+
+                            <!-- DELETE BELOW -->
+                            <!-- <li>
+                              <a
+                                href="https://twitter.com/_MagicMarcos"
+                                target="_blank"
+                                aria-label="twitter social link"
+                                class="icon icon-xs icon-twitter mr-3"
+                              >
+                                <span class="fab fa-twitter-square"></span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://github.com/MagicMarcos"
+                                target="_blank"
+                                aria-label="dribbble social link"
+                                class="icon icon-xs icon-dribbble mr-3"
+                              >
+                                <span class="fab fa-github-square"></span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.linkedin.com/in/marcoscardoso-dev/"
+                                target="_blank"
+                                aria-label="facebook social link"
+                                class="icon icon-xs icon-facebook mr-3"
+                              >
+                                <span class="fab fa-linkedin"></span>
+                              </a>
+                            </li> -->
+
+                            <!-- <li>
                         <a
                           href="#"
                           target="_blank"
@@ -295,46 +393,60 @@
                           <span class="fab fa-slack-hash"></span>
                         </a>
                       </li> -->
-                    </ul>
-                    <a
-                      class="btn btn-sm btn-primary mr-3"
-                      target="_blank"
-                      href="https://drive.google.com/file/d/10PSHyRypQsYhrieNR4FhOkQEAZMaehAr/view?usp=sharing"
-                    >
-                      Resume
-                    </a>
-                    <a class="btn btn-sm btn-primary mr-3" href="#projects">
-                      Projects
-                    </a>
-                    <a class="btn btn-sm btn-primary" href="#contact">
-                      Contact
-                    </a>
+                          </ul>
+
+                          <!-- <a
+                            class="btn btn-sm btn-primary mr-3"
+                            target="_blank"
+                            href="https://drive.google.com/file/d/10PSHyRypQsYhrieNR4FhOkQEAZMaehAr/view?usp=sharing"
+                          >
+                            Resume
+                          </a>
+                          <a
+                            class="btn btn-sm btn-primary mr-3"
+                            href="#projects"
+                          >
+                            Projects
+                          </a>
+                          <a class="btn btn-sm btn-primary" href="#contact">
+                            Contact
+                          </a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      col-md-6 col-xl-5
+                      mt-5 mt-md-0
+                      pb-2
+                      text-center text-md-left
+                    "
+                  >
+                    <h2 class="h2 mb-4 mt-0 mt-sm-3">About Me</h2>
+                    <p class="lead">
+                      Growing up as a DACA recipient, I learned early on the
+                      value of hard work, resilience, community, and
+                      resourcefulness. With these core values in mind, I started
+                      a cleaning business with my parents and put myself through
+                      college as a biologist.
+                    </p>
+                    <p class="lead">
+                      When life threw a pandemic-sized curveball at us, I
+                      discovered a passion for software engineering, wherein I
+                      live by those same core values. Exercising my curiosity
+                      and hunger for learning new concepts; while applying the
+                      leadership, communication, and research skills I’ve
+                      gathered through these experiences.
+                    </p>
+                    <p class="lead">
+                      My name is Marcos Cardoso, a proud son of immigrants on a
+                      mission to empower your business and our communities with
+                      world-class solutions.
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="col-md-6 col-xl-5 mt-6 mt-md-0 text-center text-md-left"
-            >
-              <h2 class="h1 mb-4">About Me</h2>
-              <p class="lead">
-                Growing up as a DACA recipient, I learned early on the value of
-                hard work, resilience, community, and resourcefulness. With
-                these core values in mind, I started a cleaning business with my
-                parents and put myself through college as a biologist.
-              </p>
-              <p class="lead">
-                When life threw a pandemic-sized curveball at us, I discovered a
-                passion for software engineering, wherein I live by those same
-                core values. Exercising my curiosity and hunger for learning new
-                concepts; while applying the leadership, communication, and
-                research skills I’ve gathered through these experiences.
-              </p>
-              <p class="lead">
-                My name is Marcos Cardoso, a proud son of immigrants on a
-                mission to empower your business and our communities with
-                world-class solutions.
-              </p>
             </div>
           </div>
         </div>
