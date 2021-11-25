@@ -645,8 +645,9 @@
                   </div>
                 </div>
                 <form
-                  method="post"
                   id="contactform"
+                  name="contact"
+                  method="POST"
                   action="#"
                   data-netlify="true"
                   class="col-12 col-md-8 mx-auto"
@@ -663,6 +664,7 @@
                         class="form-control"
                         id="nameInputIcon2"
                         placeholder="Name"
+                        name="name"
                         type="text"
                         aria-label="contact name input"
                       />
@@ -680,6 +682,7 @@
                         class="form-control"
                         id="emailInputIcon2"
                         placeholder="Email"
+                        name="email"
                         type="email"
                         aria-label="contact email input"
                       />
@@ -689,6 +692,7 @@
                   <div class="form-group">
                     <textarea
                       class="form-control"
+                      name="message"
                       placeholder="Enter your message..."
                       id="exampleFormControlTextarea2"
                       rows="4"
@@ -702,7 +706,7 @@
                     form="contactform"
                     class="btn btn-primary"
                   >
-                    Send message
+                    Send Me a Message
                   </button>
                 </div>
               </div>
