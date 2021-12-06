@@ -94,6 +94,8 @@
     color:#525480;
 }
 
+
+
 /* custon btns */
 .btn-info {
   color: #ecf0f3 !important;
@@ -513,7 +515,7 @@ h6, .h6 {
 }
 
 .lead {
-    font-size: 1.08rem;
+    font-size: 1.0rem;
     font-weight: 300;
 }
 
